@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class LibraryMain {
     public static void main(String[] args) {
-        // Create Entities
         Student student1 = new Student("Alice");
         Student student2 = new Student("Bob");
 
@@ -18,7 +17,6 @@ public class LibraryMain {
         BorrowedBook borrowed1 = new BorrowedBook(student1, book1, LocalDate.now());
         BorrowedBook borrowed2 = new BorrowedBook(student2, book2, LocalDate.now());
 
-        // Save Data
         LibraryDAO.saveEntity(student1);
         LibraryDAO.saveEntity(student2);
         LibraryDAO.saveEntity(author1);
